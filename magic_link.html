@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invitation - Tabulon AI</title>
+    <title>Magic Link Login - Tabulon AI</title>
     <style>
       body {
         margin: 0;
@@ -56,19 +56,6 @@
         font-size: 16px;
         color: #475569;
         margin-bottom: 20px;
-      }
-
-      .invitation-code {
-        font-size: 32px;
-        font-weight: 700;
-        color: #10b981;
-        text-align: center;
-        background-color: #f0fdf4;
-        border: 2px solid #bbf7d0;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 30px 0;
-        letter-spacing: 2px;
       }
 
       .cta-button {
@@ -130,6 +117,7 @@
       .help-text a:hover {
         text-decoration: underline;
       }
+
       @media (max-width: 600px) {
         .content,
         .header {
@@ -139,11 +127,6 @@
         .title {
           font-size: 24px;
         }
-
-        .invitation-code {
-          font-size: 28px;
-          padding: 15px;
-        }
       }
     </style>
   </head>
@@ -152,44 +135,38 @@
       <div class="header">
         <img
           src="https://png.pngtree.com/png-vector/20250321/ourmid/pngtree-ai-modern-logo-vector-png-image_15834665.png"
-          alt="Supabase"
+          alt="Tabulon AI"
           class="logo"
         />
       </div>
 
       <div class="content">
-        <h1 class="title">You have been invited</h1>
+        <h1 class="title">Magic Link</h1>
 
         <p class="greeting">Hi there,</p>
 
         <p class="message">
-          You have been invited to Tabulon AI. Follow this
-          link to accept the invite:
+          You requested a magic link to sign in to your Tabulon AI account.
         </p>
 
         <p class="message">
-          You've been invited to join our team! We're excited to have you.
+          Click the button below to securely log in to your account:
         </p>
-
-        <p class="message">
-          To accept this invitation and get started, please use the invitation
-          code below:
-        </p>
-
-        <div class="invitation-code">{{ .Token }}</div>
 
         <a
           href="{{ .ConfirmationURL }}"
           class="cta-button"
           style="color: #ffffff !important"
-          >Accept Invitation</a
+          >Log In</a
         >
 
+        <p class="message">Follow this link to login:</p>
+
         <p class="footer-message">
-          If you weren't expecting this invitation or believe it was sent in
-          error, you can safely ignore this email. If you have any questions,
-          please don't hesitate to
-          <a href="mailto:support@supabase.io">contact our support team</a>.
+          If you didn't request this magic link, you can safely ignore this email. 
+          This link will expire in 15 minutes for security reasons. 
+          If you have any questions, please don't hesitate to
+          <a href="mailto:support@tabulonai.com">contact our support team</a>.
         </p>
 
         <div class="signature">
@@ -203,7 +180,7 @@
       <div class="help-text">
         <p>
           Need help? Contact:
-          <a href="mailto:support@supabase.io">contact support</a>
+          <a href="mailto:support@tabulonai.com">contact support</a>
         </p>
       </div>
     </div>
